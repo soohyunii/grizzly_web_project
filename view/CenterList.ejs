@@ -1,0 +1,86 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Center List</title>
+    <link rel='stylesheet' href='stylesheets/style.css'  />
+ 
+</head>
+
+
+<body>
+<aside class="sidebar">
+	<div id="welcome">
+		<h3>환영합니다!</h3>
+		<img src="/stylesheets/profile.jpg" width="100px">
+		<input type="button" id="logout" value="로그아웃" onClick="location.href='/register/center'"></input><p>	<!-- 라우팅 처리 안함 -->
+		<input type="button" id="mypage" value="마이페이지" onClick="location.href='/register/choice'"></input><p>	<!-- 라우팅 처리 안함 -->
+	</div>
+</aside>	
+<article>
+
+<div id="title_center"><caption><h1>기관 리스트</h1></caption></div>
+<table border="0" id="center" cellpadding="10px" style="border-collapse:collapse;">
+    <tr>
+        <th>ID</th>
+        <th>기관명</th>
+        <th>기관이름</th>
+        <th>주소</th>
+        <th>기관담당자</th>
+        <th>이메일</th>
+        <th>핸드폰번호</th>
+        <th></th>
+    </tr>
+
+	<% for(var i=0;i<rows.length;i++){
+	var id = rows[i].기관ID;
+	var pw = rows[i].PASSWORD;
+	var centername = rows[i].기관명;
+	var name = rows[i].기관이름;
+	var addr = rows[i].주소;
+	var manager = rows[i].기관담당자; 
+	var email = rows[i].이메일;
+	var phone = rows[i].핸드폰번호;
+	%>
+	<tr><td><%= id %></td>
+		<td><%= centername %></td>  
+		<td><%= name %></td>  
+		<td><%= addr %></td>
+		<td><%= manager %></td>
+		<td><%= email %></td>
+		<td><%= phone %></td>
+		<td>
+			<div id="modify_drop">
+			<input type="button" id="modifyButton" value="수정" onClick="location.href='/modify/<%= id%>'">	
+			<input type="button" id="removeButton" value="삭제" onClick="location.href='/remove/<%= id%>'">
+			</div>
+		</td>	
+	</tr>
+	<% } %>
+
+</table>
+
+<p>
+
+<div id="button">
+	<input type="button" id="main" value="홈으로" onClick="location.href='/main'"></input>
+	<input type="button" id="dept-register" value="학과 리스트 보기" onClick="location.href='/deptList'"></input>
+	<input type="button" id="class-register" value="개설과목 리스트 보기" onClick="location.href='/classList'"></input>
+	</input>
+</div>
+</article>	
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,76 @@
+	body {
+		background: #F6F6F6;
+		margin: 0px;
+		height: 100%;
+	}	
+	aside {
+		background: #8A8A8A;
+		float: left;
+		width: 15%;
+		height: 1013px;
+	}
+
+	#welcome{
+		margin: 27%;
+		text-align: center;	
+		font-size: 1em;
+		padding-top: 10%;
+	}
+
+	#welcome img{
+		text-align: center;	
+		padding-top: 40px;
+	}
+
+	article{
+		float: right;
+		width: 70%;
+		margin-left: 10%;
+		margin-top: 6%;
+	}
+
+	#button{
+		margin-left: 25%;
+		margin-top: 10%; 
+	}
+
+	#register{
+		margin-right: 10%;
+	}
+
+	#dept-register{
+		margin-right: 10%;
+	}
+
+	#class-register{
+		margin-right: 10%;
+	}
+
+	#logout{
+		margin-top: 90px;
+	}
+
+	input{
+		margin-bottom: 10px;
+	}
+
+	h1{
+		margin-bottom: 40px;
+	}
+
+	li{
+		margin-top: 3%;
+	}
+
+	li a{
+		font-family:arial;
+	    color:black;
+	    text-decoration:none;
+	}
+
+	li:hover a{
+	 	color:#34495e;
+	 	font-weight: bolder;
+	 	font-style: italic;
+	 	text-decoration: underline;
+	}

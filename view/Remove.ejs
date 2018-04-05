@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remove</title>
+    <link rel='stylesheet' href='/stylesheets/simple.css'/>
+</head>
+<body>
+<aside class="sidebar">
+	<div id="welcome">
+		<h3>환영합니다!</h3>
+		<img src="/stylesheets/profile.jpg" width="100px">
+		<input type="button" id="logout" value="로그아웃" onClick="location.href='/register/center'"></input><p>	<!-- 라우팅 처리 안함 -->
+		<input type="button" id="mypage" value="마이페이지" onClick="location.href='/register/choice'"></input><p>	<!-- 라우팅 처리 안함 -->
+	</div>
+</aside>
+
+<article>
+	<!-- <form method="post" action="/remove/success"> -->
+	
+	<% for(var i=0;i<rows.length;i++){
+	var id = rows[i].기관ID;
+	var name = rows[i].기관이름;
+	%>
+	
+	<tr><td><h2>ID <%= id %>, <%=name%>를</h2></td>
+
+	</tr>	
+
+	<h2> 정말 삭제하시겠습니까? </h2>
+
+	<button type='submit' onClick="location.href='/remove/success/<%=id%>'">네 삭제하겠습니다</button>
+	<!-- <button type='submit' onClick="/remove/:id">네 삭제하겠습니다</button> -->
+	<button type="submit" onClick="location.href='/main1'">아니오, 취소합니다</button>
+
+	<% } %>
+
+</article>		
+</body>
+</html>	
