@@ -1,5 +1,5 @@
 # grizzly_web_project
-# 180405 : 현재는 각자의 개인 branch에서 작업하는 중. 코드는 각자의 branch에서 확인 할 수 있습니다. 
+### 180405 : 현재는 각자의 개인 branch에서 작업하는 중. 코드는 각자의 branch에서 확인 할 수 있습니다. 
 - 프로젝트에 contribute 하기위해서 project owner 가 contributor 로 추가해줘야한다.
 - 추가하려는 email 은 개인 profile > setting 에서 email 을 공개해줘야한다.
 
