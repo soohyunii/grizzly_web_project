@@ -45,6 +45,7 @@ $ cd grizzly_web_project
 1. 모든 contributor 는 로컬에서 개인 branch 를 따서 작업한다.
 - Merge request 는 fork 한 repository 에 새로운 브랜치를 따서 등록한다.
 
+$ git branch
 $ git branch {작업브랜치명}
 
 
